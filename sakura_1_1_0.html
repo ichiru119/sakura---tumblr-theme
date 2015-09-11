@@ -734,30 +734,6 @@ blockquote{
      </div>
 	 </div>
 	 {/block:PostNotes}
-
-     {block:IfDisqusShortname}
-     <div id="permalink_meta">
-     <div id="permalink_meta_inner">
-     <div id="disqus">
-	 <div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script><noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">View the discussion thread.</a></noscript>
-	 </div>
-	 <script type="text/javascript">
-	 //<![CDATA[
-	 (function() {
-	 	 var links = document.getElementsByTagName('a');
-		 var query = '?';
-		 for(var i = 0; i < links.length; i++) {
-		 if(links[i].href.indexOf('#disqus_thread') >= 0) {
-		 query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-		 }
-		 }
-		 document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/get_num_replies.js' + query + '"></' + 'script>');
-	 })();
- 	 //]]>
-	 </script>
-	 </div>
-	 </div>
-	 {/block:IfDisqusShortname}
 	 {/block:Date}
 	 {/block:PermalinkPage}
 	 
